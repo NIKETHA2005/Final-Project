@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-bg: #1abc9c; /* Teal */
+    --secondary-bg: #ff6b6b; /* Warm orange */
+    --text-dark: #2c3e50; /* Dark grey */
+    --text-muted: #95a5a6; /* Light grey */
+    --card-bg: #ffffff; /* Clean white background */
+    --button-bg: #1abc9c; /* Teal */
+    --button-hover: #f39c12; /* Orange hover effect */
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background: var(--card-bg); /* White background */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+/* Title */
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* User details section */
+.userDetails {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.userDetails p {
+    font-size: 18px;
+    color: var(--text-dark);
+    margin: 8px 0;
+}
+
+.userDetails strong {
+    color: var(--primary-bg);
+}
+
+/* Denominations Section */
+.denominations {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.denominations h2 {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.denominationRow {
+    margin-bottom: 12px;
+}
+
+.denominationRow label {
+    font-size: 18px;
+    color: var(--text-dark);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.denominationRow input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 18px;
+    color: var(--text-dark);
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+.denominationRow input:focus {
+    border-color: var(--primary-bg);
+    outline: none;
+}
+
+/* Total amount label */
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-top: 20px;
+}
+
+/* Next Button */
+.nextButton {
+    background: var(--primary-bg);
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nextButton:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+}
+
+.nextButton:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .userDetails p {
+        font-size: 16px;
+    }
+
+    .denominations h2 {
+        font-size: 20px;
+    }
+
+    .denominationRow input {
+        font-size: 16px;
+    }
+
+    .nextButton {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}

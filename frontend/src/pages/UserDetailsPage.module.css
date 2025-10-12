@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-bg: #1abc9c; /* Teal */
+    --secondary-bg: #ff6b6b; /* Warm orange */
+    --text-dark: #2c3e50; /* Dark grey */
+    --text-muted: #95a5a6; /* Light grey */
+    --card-bg: #ffffff; /* Clean white background */
+    --button-bg: #1abc9c; /* Teal */
+    --button-hover: #f39c12; /* Orange hover effect */
+    --error-color: #e74c3c; /* Error message red */
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--card-bg); /* White background */
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 32px;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Title */
+.card h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* User Detail Rows */
+.detailRow {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin: 8px 0;
+    font-weight: 400;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button {
+    flex: 1;
+    background: var(--button-bg);
+    color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/* Error and Loading Messages */
+.error, .loading {
+    color: var(--error-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .detailRow {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

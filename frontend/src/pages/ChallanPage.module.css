@@ -1,0 +1,79 @@
+/* Container Styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fa;
+}
+
+/* Challan Card Styling */
+.challanCard {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title Styling */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Details Styling */
+.details {
+  text-align: left;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+/* Print Button Styling */
+.printButton {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5); /* Blue Gradient */
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.printButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(91, 134, 229, 0.4);
+}
+
+.printButton:active {
+  transform: scale(0.95);
+}
+
+/* Print Media Styles */
+@media print {
+  .container {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .challanCard {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 15px;
+  }
+
+  .printButton {
+    display: none; /* Hide button on print */
+  }
+}

@@ -1,0 +1,77 @@
+.container {
+  padding: 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  max-width: 90%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.transactionTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.transactionTable th,
+.transactionTable td {
+  padding: 14px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.transactionTable thead {
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  color: white;
+}
+
+.transactionTable th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.transactionTable tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s ease-in-out;
+}
+
+.transactionTable tbody tr:hover {
+  background: rgba(91, 134, 229, 0.1);
+}
+
+.transactionTable tbody tr:last-child {
+  border-bottom: none;
+}
+
+.transactionTable td {
+  color: #555;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .transactionTable th,
+  .transactionTable td {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
